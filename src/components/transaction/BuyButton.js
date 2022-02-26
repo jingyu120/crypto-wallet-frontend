@@ -31,7 +31,7 @@ function BuyButton({ coinProp, coinAmount }) {
           if (balance >= data.cost) {
             axios
               .post(
-                `https://mern-crypto-wallet.herokuapp.com/api/user/${currentUser.email}/addCoin`,
+                `${process.env.REACT_APP_BASEURL}/api/user/${currentUser.email}/addCoin`,
                 data
               )
               .then((res) => {

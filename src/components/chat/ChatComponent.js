@@ -4,7 +4,7 @@ import Chat from "./Chat";
 import JoinChat from "./JoinChat";
 import "./ChatComponent.css";
 
-const socket = io.connect("https://mern-crypto-wallet.herokuapp.com/");
+const socket = io.connect(`${process.env.REACT_APP_BASEURL}/`);
 
 export default function ChatComponent() {
   const [showChat, setShowChat] = useState(false);

@@ -21,7 +21,7 @@ function App() {
     currentUser &&
       axios
         .get(
-          `https://mern-crypto-wallet.herokuapp.com/api/user/${currentUser.email}/balance`
+          `${process.env.REACT_APP_BASEURL}/api/user/${currentUser.email}/balance`
         )
         .then((res) => dispatch(setBalance(res.data)));
   }, [currentUser, dispatch]);

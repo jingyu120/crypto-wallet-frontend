@@ -19,7 +19,7 @@ export default function Registration() {
       await createUserWithEmailAndPassword(auth, email, password);
       const data = { name, email, birthday, gender };
       axios
-        .post("https://mern-crypto-wallet.herokuapp.com/api/user/createUser", data)
+        .post(`${process.env.REACT_APP_BASEURL}/api/user/createUser`, data)
         .then((res) => {
           if (res.status === 200) {
             navigate("/");

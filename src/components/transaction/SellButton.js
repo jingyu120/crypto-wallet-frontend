@@ -33,7 +33,7 @@ function SellButton({ coinProp, coinAmount }) {
             };
             axios
               .post(
-                `https://mern-crypto-wallet.herokuapp.com/api/user/${currentUser.email}/sellCoin`,
+                `${process.env.REACT_APP_BASEURL}/api/user/${currentUser.email}/sellCoin`,
                 data
               )
               .then((res) => dispatch(setBalance(res.data)));
