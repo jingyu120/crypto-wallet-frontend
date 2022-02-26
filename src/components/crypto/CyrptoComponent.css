@@ -1,0 +1,29 @@
+.crypto-table {
+  margin: auto;
+  margin-top: 80px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.crypto-table table {
+  border-collapse: collapse;
+  overflow-x: scroll;
+}
+.crypto-table thead {
+  background: pink;
+}
+.crypto-table table th:first-child {
+  border-radius: 10px 0 0 10px;
+}
+
+.crypto-table table th:last-child {
+  border-radius: 0 10px 10px 0;
+}
+
+.crypto-table thead th {
+  padding: 10px 5px;
+}
+
+.crypto-table tbody td {
+  padding: 5px 5px;
+}

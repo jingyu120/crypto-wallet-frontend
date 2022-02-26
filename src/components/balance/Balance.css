@@ -1,0 +1,26 @@
+.balance_input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  margin: 10px auto;
+}
+.balance_input label {
+  font-size: xx-large;
+}
+
+.balance_input input {
+  width: 80%;
+}
+
+.balance_input select {
+  width: 80%;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+.balance_input button {
+  background-color: black;
+  width: 60%;
+  margin-top: 10px;
+}

@@ -1,0 +1,50 @@
+.loginPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 18px;
+}
+
+.input-fields {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+input {
+  width: 90%;
+  height: 20px;
+  background: #e0dede;
+  margin: 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+}
+
+button {
+  padding: 0.3em 1.2em;
+  margin: 0 0.1em 0.1em 0;
+  border: 0.16em solid rgba(255, 255, 255, 0);
+  border-radius: 2em;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  color: #ffffff;
+  text-shadow: 0 0.04em 0.04em rgba(0, 0, 0, 0.35);
+  text-align: center;
+  transition: all 0.2s;
+}
+
+.sign-in {
+  background-color: #4e9af1;
+}
+.google-sign-in {
+  background-color: #d9544f;
+}
+
+.register {
+  font-size: medium;
+}
+.register a {
+  color: #4e9af1;
+  font-size: medium;
+}

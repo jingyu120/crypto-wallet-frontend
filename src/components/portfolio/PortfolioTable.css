@@ -1,0 +1,25 @@
+.portfolio-table {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Nunito", sans-serif;
+}
+
+.portfolio-table .openModalBtn {
+  width: 100px;
+  height: 40px;
+  border: none;
+  margin: 10px 5px;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+}
+
+.buy {
+  background-color: green;
+}
+.sell {
+  background-color: red;
+}
