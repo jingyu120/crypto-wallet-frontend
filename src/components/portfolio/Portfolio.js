@@ -10,7 +10,9 @@ export default function Portfolio({ currentUser }) {
     if (!currentUser) {
       navigate("/login");
     } else {
-      axios.get(`http://localhost:3001/api/user/${currentUser.email}/networth`);
+      axios.get(
+        `https://mern-crypto-wallet.herokuapp.com/api/user/${currentUser.email}/networth`
+      );
     }
     // eslint-disable-next-line
   }, [currentUser]);

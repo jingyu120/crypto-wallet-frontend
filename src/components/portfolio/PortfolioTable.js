@@ -17,7 +17,7 @@ function PortfolioTable() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:3001/api/user/getCoins", {
+      .get("https://mern-crypto-wallet.herokuapp.com/api/user/getCoins", {
         params: {
           email: currentUser.email,
         },

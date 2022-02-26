@@ -20,7 +20,9 @@ function App() {
   useEffect(() => {
     currentUser &&
       axios
-        .get(`http://localhost:3001/api/user/${currentUser.email}/balance`)
+        .get(
+          `https://mern-crypto-wallet.herokuapp.com/api/user/${currentUser.email}/balance`
+        )
         .then((res) => dispatch(setBalance(res.data)));
   }, [currentUser, dispatch]);
 

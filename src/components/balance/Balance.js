@@ -16,7 +16,7 @@ function Balance() {
     if (trsx === "+") {
       axios
         .post(
-          `http://localhost:3001/api/user/${currentUser.email}/depositCash/${amount}`
+          `https://mern-crypto-wallet.herokuapp.com/api/user/${currentUser.email}/depositCash/${amount}`
         )
         .then((res) => {
           if (res.status === 200) {
@@ -29,7 +29,7 @@ function Balance() {
     } else if (trsx === "-") {
       axios
         .post(
-          `http://localhost:3001/api/user/${currentUser.email}/withdrawCash/${amount}`
+          `https://mern-crypto-wallet.herokuapp.com/api/user/${currentUser.email}/withdrawCash/${amount}`
         )
         .then((res) => {
           if (res.status === 200) {

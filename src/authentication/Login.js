@@ -30,7 +30,7 @@ export default function Login() {
         email: result.user.email,
       };
       axios
-        .post("http://localhost:3001/api/user/google_sign_in", data)
+        .post("https://mern-crypto-wallet.herokuapp.com/api/user/google_sign_in", data)
         .then((res) => {
           if (res.status === 200) {
             navigate("/");
